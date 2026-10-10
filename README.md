@@ -2,7 +2,7 @@
 
 给 [WorkBuddy](https://www.workbuddy.cn) 桌面端换照片背景的完整工具。**从上传照片到最终完成，一条命令。**
 
-##效果
+## 效果
 
 - 整窗一整块背景，侧栏 / 输入框 / 消息卡片 / 顶栏**全部零白卡片**
 - 背景固定不随内容滚动（`background-attachment: fixed`）
@@ -19,14 +19,14 @@ python3 setup.py <图片路径> --alpha 0 --blur 0
 
 # 3) 调效果
 python3 setup.py tune --blur 8      # 字看不清时加模糊（不会发白）
-python3 setup.py show# 看当前值
+python3 setup.py show        # 看当前值
 python3 setup.py reset             # 恢复默认
 
 # 4) 卸载，恢复官方原版
 python3 setup.py uninstall
 ```
 
-> Python 需装Pillow：`pip3 install Pillow`
+> Python 需装 Pillow：`pip3 install Pillow`
 
 ## 两个参数
 
@@ -67,7 +67,7 @@ WorkBuddy 外观是**云端驱动**的：App 从服务器拉主题 zip → 解�
 
 ⚠️ 缓存目录上限 8 个，LRU 按 mtime 淘汰；App 升级后可能重置，重跑一次安装命令即可。
 
-##⚠️ 七条铁律（两天实战换来的，先读这段）
+## ⚠️ 七条铁律（两天实战换来的，先读这段）
 
 1. **官方 skin.css 必须"追加"，绝不能"替换"** —— 替换会丢全部官方样式。
 2. **会话主体白底由 `--wb-color-bg-primary-default` 刷**，不是容器。
